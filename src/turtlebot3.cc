@@ -234,13 +234,13 @@ class Turtlebot3 : public ModelPlugin
  public:
   double getLeftJointPosition()
   {
-    return left_wheel_joint_->GetAngle(0).Radian();
+    return left_wheel_joint_->Position(0);
   }
 
  public:
   double getRightJointPosition()
   {
-    return right_wheel_joint_->GetAngle(0).Radian();
+    return right_wheel_joint_->Position(0);
   }
 
  public: 
